@@ -1,14 +1,20 @@
 .body {
   margin: 0;
   padding: 0;
+  background-color: rgba(245, 245, 245, 0.79) ;
 }
 .iletişim {
   font-weight: bold;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   color: rgba(255, 255, 255, 0.904);
-  padding-top: 100px;
+  padding-top: 7px;
 }
+
+.iletişim p{
+  font-size: 50px;
+}
+
 
 .iletişim input {
   width: 200px;
@@ -19,8 +25,8 @@
   padding: 10px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
-  color: rgba(44, 44, 44, 0.986);
-  background-color: rgb(231, 208, 208);
+  color: rgba(255, 255, 255, 0.986);
+  background-color: rgb(45, 45, 45);
   cursor: pointer;
   border: 0;
   border-radius: 20px;
@@ -28,7 +34,6 @@
 .HaftalıkDreslerTablosu {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
-  padding-top: 20px;
   border-color: transparent;
  background-color: rgb(242, 242, 242) ;
  margin-left: 230px;
@@ -91,7 +96,6 @@
 }
 
 .container {
-  margin-left: 40px;
   width: 256px;
   height: 231px;
   background-color: white;
@@ -100,6 +104,13 @@
   border-radius: 20px;
   float: left;
   margin: 20px;
+}
+
+.container p{
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(30, 30, 30);
 }
 
 .Front_Page img {
@@ -121,7 +132,7 @@
 }
 
 .Front_Page{
-  background-color: rgb(37, 37, 37);
+  background-color: rgb(24, 24, 24);
   height: 800px;
 }
 
@@ -132,7 +143,7 @@
 }
 
 .PersonalInfo label {
-  color: rgb(0, 0, 0);
+  color: rgb(40, 40, 40);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -143,8 +154,9 @@
 }
 
 .Hakkımda{
-  background-color: rgb(242, 242, 242) ;
-  height:  1400px;
+  background-color: rgba(245, 245, 245, 0.79) ;
+  border-color: rgb(250, 137, 45);
+  height:  900px;
 }
 
 .Hakkımda h1 {
@@ -153,13 +165,16 @@
   font-size: 50px;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
-  color: rgb(17, 17, 17);
+  color: rgb(26, 26, 26);
+  text-shadow: 3px 5px rgb(186, 186, 186);
+  text-decoration: underline;
+  text-decoration-color: rgba(246, 136, 18, 0.822);
 }
 
 .Hakkımda img {
-  margin-top: 50px;
+  margin-top: 100px;
   float: right;
-  margin-right: 20px;
+  margin-right: 25px;
   border-radius: 20px;
   border: inset black;
 }
@@ -167,16 +182,16 @@
 .Hakkımda p {
   margin-top: 80px;
   padding-left: 20px;
-  font-size: 35px;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: rgba(0, 0, 0, 0.938);
+  font-size: 34px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgba(28, 28, 28, 0.938);
 }
 
 .Hakkımda a {
   text-decoration: none;
   padding-left: 10px;
   font-size: 35px;
-  color: beige;
+  color: rgba(103, 101, 101, 0.66);
 }
 
 .Hakkımda button {
