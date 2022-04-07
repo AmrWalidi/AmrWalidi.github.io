@@ -1,5 +1,4 @@
 .body {
-  background-color: rgb(37, 37, 37);
   margin: 0;
   padding: 0;
 }
@@ -28,8 +27,12 @@
 }
 .HaftalıkDreslerTablosu {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
   padding-top: 20px;
   border-color: transparent;
+ background-color: rgb(242, 242, 242) ;
+ margin-left: 230px;
+ border-color:black ;
 }
 
 .İNÜ_tanıtımı img {
@@ -58,7 +61,19 @@
   color: rgb(250, 137, 45);
   padding-top: 10px;
   transition: font-size 1s, color 1ms;
-  position: fixed;
+  position: absolute;
+  
+}
+
+
+#navBox p{
+  position: absolute;
+  font-weight: bold;
+  font-size: 20px;
+  font-family:cursive;
+  left: 20px;
+  margin-top: 10px;
+  color: rgb(250, 137, 45);
 }
 
 #navBox a:hover {
@@ -91,18 +106,25 @@
   width: 300px;
   height: 380px;
   margin-right: 120px;
-  margin-top: 30px;
+  margin-top: 200px;
   float: right;
   border-color: black;
   border-style: inset;
 }
 
 .Front_Page p {
-  font-size: 60px;
-  margin-left: 250px;
-  padding-top: 40px;
+  font-size: 61px;
+  padding-top: 250px;
   color: rgba(255, 255, 255, 0.952);
+  margin: auto;
+  width: 65%;
 }
+
+.Front_Page{
+  background-color: rgb(37, 37, 37);
+  height: 800px;
+}
+
 
 .PersonalInfo {
   padding-top: 100px;
@@ -110,21 +132,28 @@
 }
 
 .PersonalInfo label {
-  color: beige;
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .PersonalInfo span {
-  color: white;
+  color: rgb(0, 0, 0);
   font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.Hakkımda{
+  background-color: rgb(242, 242, 242) ;
+  height:  1400px;
 }
 
 .Hakkımda h1 {
   text-align: center;
-  padding-top: 60px;
+  padding-top: 50px;
   font-size: 50px;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
-  color: rgb(250, 158, 37);
+  color: rgb(17, 17, 17);
 }
 
 .Hakkımda img {
@@ -138,8 +167,9 @@
 .Hakkımda p {
   margin-top: 80px;
   padding-left: 20px;
-  font-size: 40px;
-  color: rgba(255, 255, 255, 0.938);
+  font-size: 35px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgba(0, 0, 0, 0.938);
 }
 
 .Hakkımda a {
@@ -169,3 +199,4 @@
   color: black;
   border: 2px solid black;
 }
+
