@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>push Pop</title>
+    <script>
+      const dizi = [];
+      function Push() {
+        var eleman = parseInt(document.getElementById("demo").value);
+        dizi.push(eleman);
+        document.getElementById("demo2").innerHTML =
+          "<span style =' font-size:20px'>" + dizi.join(" ") + "</span>";
+      }
+      function Pop() {
+        dizi.pop();
+        document.getElementById("demo2").innerHTML =
+          "<span style =' font-size:20px'>" + dizi.join(" ") + "</span>";
+      }
+      function TekrarEdenleriSil() {
+        for (let i = 0; i < dizi.length; i++) {
+          for (let j = i + 1; j < dizi.length; j++) {
+            if (dizi[i] == dizi[j]) {
+              dizi.splice(j, 1);
+              j--;
+            }
+          }
+        }
+        document.getElementById("demo2").innerHTML =
+          "<span style =' font-size:20px'>" + dizi.join(" ") + "</span>";
+      }
+    </script>
+  </head>
+  <body style="background-color: aqua">
+    <label style="font-size: 20px">sayı:</label>
+    <input id="demo" type="text" />
+    <button onclick="Push()">Push</button>
+    <button onclick="Pop()">Pop</button>
+    <button onclick="TekrarEdenleriSil()">Tekrar edenleri sil</button
+    ><br /><br />
+    <p id="demo2"></p>
+  </body>
+</html>
