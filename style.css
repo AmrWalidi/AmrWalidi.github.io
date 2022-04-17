@@ -159,7 +159,7 @@
   font-size: 20px;
   border-color: transparent;
  background-color: rgb(242, 242, 242) ;
- margin-left: 230px;
+ margin-left: 200px;
  border-color:black ;
 }
 
@@ -206,10 +206,9 @@
 .HMbaslik{
   text-align: center;
   color: white;
-  font-size: 40px;
-  font-weight: bold;
+  font-size: 50px;
   padding-top: 40px;
-  text-decoration: underline;
+
 }
 
 
