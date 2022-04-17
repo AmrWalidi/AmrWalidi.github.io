@@ -10,7 +10,8 @@
           "</span>";
         i++;
         setTimeout(typeWriter, speed);
-      } else {
+        } 
+      else {
         document.getElementById("demo").innerHTML += txt.charAt(i);
         i++;
         setTimeout(typeWriter, speed);

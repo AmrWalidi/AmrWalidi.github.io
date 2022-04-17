@@ -3,61 +3,17 @@
   padding: 0;
   background-color: rgba(245, 245, 245, 0.79) ;
 }
-.iletişim {
-  font-weight: bold;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgba(255, 255, 255, 0.904);
-  padding-top: 7px;
-}
-
-.iletişim p{
-  font-size: 50px;
-}
 
 
-.iletişim input {
-  width: 200px;
-  height: 30px;
+#navBox {
+  width: 100%;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(49, 49, 49);
+  position: fixed;
 }
 
-.iletişim button {
-  padding: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  color: rgba(255, 255, 255, 0.986);
-  background-color: rgb(45, 45, 45);
-  cursor: pointer;
-  border: 0;
-  border-radius: 20px;
-}
-.HaftalıkDreslerTablosu {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  border-color: transparent;
- background-color: rgb(242, 242, 242) ;
- margin-left: 230px;
- border-color:black ;
-}
-
-.İNÜ_tanıtımı img {
-  width: 25%;
-  height: 360px;
-  float: right;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding-top: 10px;
-}
-
-.İNÜ_tanıtımı p {
-  text-align: justify;
-  font-size: 22px;
-  color: white;
-  font-family: "Times New Roman", Times, serif;
-  padding-top: 65px;
-  padding-left: 20px;
-  width: 95%;
-}
 #navBox a {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: bolder;
@@ -70,6 +26,10 @@
   
 }
 
+#navBox a:hover {
+  font-size: 20px;
+  color: white;
+}
 
 #navBox p{
   position: absolute;
@@ -81,36 +41,12 @@
   color: rgb(250, 137, 45);
 }
 
-#navBox a:hover {
-  font-size: 20px;
-  color: white;
-}
 
-#navBox {
-  width: 100%;
-  height: 50px;
-  padding: 0;
-  margin: 0;
-  background-color: rgb(49, 49, 49);
-  position: fixed;
-}
 
-.container {
-  width: 256px;
-  height: 231px;
-  background-color: white;
-  border: 1px solid white;
-  padding-top: 100px;
-  border-radius: 20px;
-  float: left;
-  margin: 20px;
-}
 
-.container p{
-  font-size: 30px;
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgb(30, 30, 30);
+.Front_Page{
+  background-color: rgb(24, 24, 24);
+  height: 800px;
 }
 
 .Front_Page img {
@@ -131,27 +67,8 @@
   width: 65%;
 }
 
-.Front_Page{
-  background-color: rgb(24, 24, 24);
-  height: 800px;
-}
 
 
-.PersonalInfo {
-  padding-top: 100px;
-  font-size: 20px;
-}
-
-.PersonalInfo label {
-  color: rgb(40, 40, 40);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.PersonalInfo span {
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  font-family: 'Times New Roman', Times, serif;
-}
 
 .Hakkımda{
   background-color: rgba(245, 245, 245, 0.79) ;
@@ -172,7 +89,7 @@
 }
 
 .Hakkımda img {
-  margin-top: 100px;
+  margin-top: 60px;
   float: right;
   margin-right: 25px;
   border-radius: 20px;
@@ -180,6 +97,8 @@
 }
 
 .Hakkımda p {
+  text-align: justify;
+  width: 1140px;
   margin-top: 80px;
   padding-left: 20px;
   font-size: 34px;
@@ -213,5 +132,169 @@
   background-color: rgba(231, 231, 231, 0.938);
   color: black;
   border: 2px solid black;
+  cursor: pointer;
 }
 
+.İNÜ_tanıtımı img {
+  width: 25%;
+  height: 360px;
+  float: right;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 10px;
+}
+
+.İNÜ_tanıtımı p {
+  text-align: justify;
+  font-size: 25px;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  padding-top: 65px;
+  padding-left: 20px;
+  width: 95%;
+}
+
+.HaftalıkDreslerTablosu {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  border-color: transparent;
+ background-color: rgb(242, 242, 242) ;
+ margin-left: 230px;
+ border-color:black ;
+}
+
+
+
+
+
+
+.pushPop{
+  text-align: center; 
+  margin-top: 280px; 
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.968);
+  font-weight: bold;
+}
+
+.pushPop input{
+   padding-top: 7px;
+   width: 200px;
+   font-size: 15px;
+}
+
+.pushPop button{
+  font-size: 20px;
+}
+
+
+
+
+.hesapMakinesi {
+  text-align: center;
+  padding-top: 120px;
+}
+
+.hesapMakinesi label {
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.hesapMakinesi input, button {
+  font-size: 20px;
+}
+
+.HMbaslik{
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  padding-top: 40px;
+  text-decoration: underline;
+}
+
+
+
+
+
+.container {
+  width: 256px;
+  height: 231px;
+  background-color: white;
+  border: 1px solid white;
+  padding-top: 100px;
+  border-radius: 20px;
+  float: left;
+  margin: 20px;
+}
+
+.container p{
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(30, 30, 30);
+}
+
+
+
+
+
+.iletişim {
+  font-weight: bold;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(255, 255, 255, 0.904);
+  padding-top: 7px;
+}
+
+.iletişim label{
+  font-size: 25px; 
+  color: rgb(13, 13, 13);
+   font-family: cursive;
+}
+
+.iletişim p{
+  font-size: 70px;
+}
+
+
+.iletişim input {
+  width: 200px;
+  height: 30px;
+}
+
+.iletişim button {
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.986);
+  background-color: rgb(45, 45, 45);
+  cursor: pointer;
+  border: 0;
+  border-radius: 20px;
+  transition: background-color, color, 2ms;
+}
+
+.iletişim button:hover{
+   background-color: rgba(228, 225, 225, 0.986);
+   color:rgb(45, 45, 45) ;
+   font-weight: bold;
+   border: 2px solid black;
+}
+
+
+
+.PersonalInfo {
+  padding-top: 100px;
+  font-size: 20px;
+}
+
+.PersonalInfo label {
+  color: rgb(40, 40, 40);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.PersonalInfo span {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
