@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 .body {
   margin: 0;
   padding: 0;
@@ -45,26 +48,19 @@
 
 
 .Front_Page{
-  background-color: rgb(24, 24, 24);
-  height: 800px;
+  background-image: url(images/dark-abstract-black-minimal-4k-q0-1920x1080.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 800px; 
 }
 
-.Front_Page img {
-  width: 300px;
-  height: 380px;
-  margin-right: 100px;
-  margin-top: 200px;
-  float: right;
-  border-color: black;
-  border-style: inset;
-}
 
 .Front_Page p {
-  font-size: 61px;
-  padding-top: 250px;
+  font-size: 50px;
+  padding-top: 270px;
   color: rgba(255, 255, 255, 0.952);
   margin: auto;
-  width: 65%;
+  width: 55%;
 }
 
 
@@ -89,9 +85,8 @@
 }
 
 .Hakkımda img {
-  margin-top: 60px;
+  margin-top: 90px;
   float: right;
-  margin-right: 25px;
   border-radius: 20px;
   border: inset black;
 }
@@ -154,20 +149,6 @@
   width: 95%;
 }
 
-.HaftalıkDreslerTablosu {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  border-color: transparent;
- background-color: rgb(242, 242, 242) ;
- margin-left: 200px;
- border-color:black ;
-}
-
-
-
-
-
-
 .pushPop{
   text-align: center; 
   margin-top: 280px; 
@@ -213,9 +194,13 @@
 
 
 
+.proje{
+  position: relative;
+  left: 160px;
+  
+}
 
-
-.container {
+.contain {
   width: 256px;
   height: 231px;
   background-color: white;
@@ -226,39 +211,49 @@
   margin: 20px;
 }
 
-.container p{
+.contain p{
   font-size: 30px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(30, 30, 30);
 }
 
-
+.contain img{
+  width: 250px;
+  margin-left: 3px;
+  margin-top: -73px;
+  height: 230px;
+}
 
 
 
 .iletişim {
-  font-weight: bold;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgba(255, 255, 255, 0.904);
+  color: rgb(13, 13, 13);
   padding-top: 7px;
 }
 
-.iletişim label{
-  font-size: 25px; 
-  color: rgb(13, 13, 13);
-   font-family: cursive;
-}
+
 
 .iletişim p{
-  font-size: 70px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  text-decoration: underline;
 }
 
 
 .iletişim input {
   width: 200px;
   height: 30px;
+  padding-bottom: 7px;
+  border-radius: 5px;
+}
+
+.iletişim textarea{
+  width: 200px;
+  height: 70px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px ;
 }
 
 .iletişim button {
@@ -283,17 +278,35 @@
 
 
 .PersonalInfo {
-  padding-top: 100px;
-  font-size: 20px;
+  padding-top: 80px;
+  font-size: 15px;
+  float: left;
+  text-align: left;
+  margin-bottom: 80px;
 }
 
-.PersonalInfo label {
+.PersonalInfo p {
   color: rgb(40, 40, 40);
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 .PersonalInfo span {
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
 }
+
+.contact{
+  margin-top: 40px;
+  position: relative;
+  right: 300px;
+}
+
+
+.contact p{
+  font-size: 25px; 
+  color: rgb(13, 13, 13);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: none;
+}
+
