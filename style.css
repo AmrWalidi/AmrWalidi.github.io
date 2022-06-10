@@ -34,15 +34,7 @@ html{
   color: white;
 }
 
-#navBox p{
-  position: absolute;
-  font-weight: bold;
-  font-size: 20px;
-  font-family:cursive;
-  left: 20px;
-  margin-top: 10px;
-  color: rgb(250, 137, 45);
-}
+
 
 
 
@@ -92,7 +84,7 @@ html{
 .Hakkımda h1 {
   text-align: center;
   padding-top: 50px;
-  font-size: 50px;
+  font-size: 4vw;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
   color: rgb(26, 26, 26);
@@ -112,7 +104,7 @@ html{
   text-align: justify;
   margin-top: 80px;
   padding-left: 20px;
-  font-size: 25px;
+  font-size: 1.9vw;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: rgba(28, 28, 28, 0.938);
 }
