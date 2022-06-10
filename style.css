@@ -48,9 +48,8 @@ html{
 
 
 .Front_Page{
-  background-image: url(images/dark-abstract-black-minimal-4k-q0-1920x1080.jpg);
-  background-repeat: no-repeat;
-  background-size:cover;
+  background-color: black; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, black, white);
   height: 800px; 
 }
 
@@ -95,7 +94,7 @@ html{
   text-align: justify;
   margin-top: 80px;
   padding-left: 20px;
-  font-size: 34px;
+  font-size: 25px;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: rgba(28, 28, 28, 0.938);
 }
@@ -103,7 +102,7 @@ html{
 .Hakkımda a {
   text-decoration: none;
   padding-left: 10px;
-  font-size: 35px;
+  font-size: 25px;
   color: rgba(103, 101, 101, 0.66);
 }
 
