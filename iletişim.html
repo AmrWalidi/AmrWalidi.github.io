@@ -1,68 +1,163 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>iletişim</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="code.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  </head>
-  <body class="body">
-    <div class="iletişim">
-      <p>İletişim</p>
-      <div class="container PersonalInfo">
-        <ul>
-          <p>
-            <span class="glyphicon glyphicon-user"></span>
-            <label> Name:</label><br />
-            Amr Walidi
-          </p>
-        </ul>
-        <ul>
-          <p>
-            <span class="glyphicon glyphicon-envelope"></span>
-            <label> E-posta:</label><br />
-            amr.nawaf128@gmail.com
-          </p>
-        </ul>
-        <ul>
-          <p>
-            <span class="glyphicon glyphicon-phone"></span>
-            <label> Tel no:</label><br />
-            +905369922950
-          </p>
-        </ul>
-        <ul>
-          <p>
-            <span class="glyphicon glyphicon-map-marker"></span
-            ><label> Adres:</label><br />
-            Cirikpınar, Özel Ensar Vakfı Malatya YüksekÖğrenim <br />
-            Erkek Öğrenci Yurdu, Altunkaynak.
-          </p>
-        </ul>
-      </div>
-      <div class="contact">
-        <form onsubmit="massage()">
-          <p>BENİMLE İLETİŞİME GEÇ:</p>
-          <br />
-          <input id="name" placeholder="Adın" type="text" /><br /><br />
-          <input id="Email" placeholder="E-posta" type="email" /><br /><br />
-          <input id="phone" placeholder="Telefon No." type="tel" /><br /><br />
-          <textarea id="Açıklama" rows="4" placeholder="Açıklama"></textarea>
-          <br /><br />
-          <button type="submit">GÖNDER</button>
-        </form>
-      </div>
-    </div>
-
-    <script>
-      function massage() {
-        window.alert("masaj başarlı gönderdi!");
+    <style>
+      * {
+        box-sizing: border-box;
       }
-    </script>
+
+      input[type="text"],
+      textarea {
+        width: 50vw;
+        height: 2vw;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+      }
+
+      label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+      }
+
+      input[type="submit"] {
+        padding: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1vw;
+        color: rgba(255, 255, 255, 0.986);
+        background-color: rgb(45, 45, 45);
+        cursor: pointer;
+        border: 0;
+        border-radius: 2vw;
+        transition: background-color, color, 2ms;
+      }
+
+      input[type="submit"]:hover {
+        background-color: rgba(228, 225, 225, 0.986);
+        color: rgb(45, 45, 45);
+        font-weight: bold;
+        border: 2px solid black;
+      }
+
+      .contact {
+        border-radius: 5px;
+        padding: 20px;
+      }
+
+      .contact p {
+        font-size: 1.5vw;
+        color: rgb(13, 13, 13);
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        text-decoration: none;
+      }
+
+      .contact span {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 4vw;
+        text-decoration: underline;
+      }
+
+      .col-25 {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+      }
+
+      .col-75 {
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .col-25,
+        .col-75,
+        input[type="submit"] {
+          width: 100%;
+          margin-top: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contact">
+      <span>İletişim</span><br /><br />
+      <p>Benimle İletişime Geçiniz:</p>
+      <form>
+        <div class="row">
+          <div class="col-75">
+            <input type="text" placeholder="Ad" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-75">
+            <input type="text" placeholder="No." />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-75">
+            <input type="text" placeholder="E-posta" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-75">
+            <textarea
+              placeholder="Açıklayınız"
+              style="height: 200px"
+            ></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <input type="submit" value="Gönder" />
+        </div>
+      </form>
+    </div>
+    <div class="container PersonalInfo" style="padding: 0; margin: 0">
+      <ul>
+        <p>
+          <span class="glyphicon glyphicon-user"></span>
+          <label> Name:</label><br />
+          Amr Walidi
+        </p>
+      </ul>
+      <ul>
+        <p>
+          <span class="glyphicon glyphicon-envelope"></span>
+          <label> E-posta:</label><br />
+          amr.nawaf128@gmail.com
+        </p>
+      </ul>
+      <ul>
+        <p>
+          <span class="glyphicon glyphicon-phone"></span>
+          <label> Tel no:</label><br />
+          +905369922950
+        </p>
+      </ul>
+      <ul>
+        <p>
+          <span class="glyphicon glyphicon-map-marker"></span
+          ><label> Adres:</label><br />
+          Cirikpınar, Özel Ensar Vakfı Malatya YüksekÖğrenim <br />
+          Erkek Öğrenci Yurdu, Altunkaynak.
+        </p>
+      </ul>
+    </div>
   </body>
 </html>
