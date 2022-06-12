@@ -63,8 +63,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
     font-size: 1.2vw;
-    width: 8vw;
-    height: 3.5vw;
+    padding: 1vw ;
     transition: background-color, border-color, 40ms;
   }
 
