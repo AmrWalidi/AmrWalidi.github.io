@@ -1,11 +1,6 @@
-.proje{
-    height: 70vh;
-  }
-
-  .proje p{
+.proje p{
     font-size: 4.5vw;
     position: relative;
-    margin-top: 44vw;
     top: 2vw;
     margin-left: 30px;
     text-align: center;
