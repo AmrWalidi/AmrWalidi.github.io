@@ -4,7 +4,7 @@ async function genPDF() {
     var doc = new jsPDF('1','pt');
 
     await html2canvas(downloading,{
-        width: 3500
+        width: 3600
     }).then((canvas)=>{
         doc.addImage(canvas.toDataURL("image/png"),'PNG',0,0,2000,200);
     })
