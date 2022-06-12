@@ -3,66 +3,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile Page</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="anasayfa.css" />
+    <link rel="stylesheet" href="hakkimda.css" />
+    <link rel="stylesheet" href="proje.css" />
     <link rel="stylesheet" href="iletisim.css" />
     <script src="code.js"></script>
+    <link rel="stylesheet" href="footer.css">
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-     <script>
-     $(document).ready(function () {
-      // Activate Carousel
-      $("#myCarousel").carousel({ interval: 7000 });
-    
-      // Enable Carousel Controls
-      $(".left").click(function () {
-        $("#myCarousel").carousel("prev");
-      });
-      $(".right").click(function () {
-        $("#myCarousel").carousel("next");
-      });
+    <script>
+        
+  $(document).ready(function() {
+    // Activate Carousel
+    $("#myCarousel").carousel({ interval: 7000 });
+  
+    // Enable Carousel Controls
+    $(".left").click(function () {
+      $("#myCarousel").carousel("prev");
     });
-    
-    function massage() {
-        window.alert("masaj başarlı gönderdi!");
-      }
-    
+    $(".right").click(function () {
+      $("#myCarousel").carousel("next");
+    });
+  });
+
+  $(document).ready(function(){
+    let $table =$("#table > tbody");
+    $.getJSON("table.json", function(data){
+        $.each(data, function(index,value){
+            var row= `<tr>
+            <td>${value.no}</td>
+            <td>${value.adi}</td>
+            <td>${value.trh}</td>
+            <td>${value.ack}</td>
+            <td>
+            <a href=${value.link} target="_top"><button style="background-color:rgb(250, 137, 45); color:black; border: white" >Bas</button></a>
+          </td>
+          </tr>
+            `
+            $table.append(row);
+        });
+    });
+});
     </script>
-     
-    <style>
-      /* width */
-      ::-webkit-scrollbar {
-        width: 10px;
-      }
-
-      /* Track */
-      ::-webkit-scrollbar-track {
-        background: #f1f1f1;
-      }
-
-      /* Handle */
-      ::-webkit-scrollbar-thumb {
-        background: #888;
-      }
-
-      /* Handle on hover */
-      ::-webkit-scrollbar-thumb:hover {
-        background: #555;
-      }
-
-      .carousel-inner > .item > img,
-      .carousel-inner > .item > a > img {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-      }
-      video {
-      width: 100%;
-      height: auto;
-}
-    </style>
   </head>
   <body class="body">
     <div id="navBox">
@@ -72,7 +62,7 @@
       <a style="right: 30px" href="#iletişim">İletişim</a>
     </div>
     <ul style="list-style-type: none; padding: 0; margin: 0">
-      <li id="anasayfa">
+      <li  id="anasayfa">
         <div class="Front_Page ">
           <div class="container">
             <div id="myCarousel" class="carousel slide">
@@ -222,68 +212,24 @@
           </table>
         </div>
       </li>
-      <li id="projeler"  style="background-color: rgb(33, 33, 33);">
+      <li id="projeler">
         <div class="proje">
-          <p 
-          style="
-            font-size: 4vw;
-            position: relative;
-            margin-top: 44vw;
-            top: 2vw;
-            margin-left: 30px;
-            color: white;
-            text-decoration: underline;
-            text-align: center;
-          "
-        >
-          Projeler
-        </p>
+          <p>Projeler</p>
         <div class="container">
-          <div class="row">
-            <div class="col-lg-3">
-              <div class="contain">
-                <a href="smilyFace.html" target="_top"
-                  ><img
-                    class="img-responsive"
-                    src="images/Screenshot 2022-04-01 143456.png"
-                /></a>
-                <p style="margin-left: 1.8vw">Gülen Surat</p>
-              </div>
-            </div>
-    
-            <div class="col-lg-3">
-              <div class="contain">
-                <a href="metin.html" target="_top"
-                  ><img
-                    class="img-responsive"
-                    src="images/Screenshot 2022-04-01 143757.png"
-                /></a>
-                <p style="margin-left: 1vw">Metinde Bulma</p>
-              </div>
-            </div>
-    
-            <div class="col-lg-3">
-              <div class="contain">
-                <a href="hesapMakinasi.html" target="_top"
-                  ><img
-                    class="img-responsive"
-                    src="images/Screenshot 2022-04-01 144239.png"
-                /></a>
-                <p style="font-size: 2vw; margin-left: 1vw">Hesap Makinası</p>
-              </div>
-            </div>
-    
-            <div class="col-lg-3">
-              <div class="contain">
-                <a href="push_pop.html" target="_top"
-                  ><img
-                    class="img-responsive"
-                    src="images/Screenshot 2022-04-01 144754.png"
-                /></a>
-                <p style="font-size: 1.7vw; margin-left: 1vw">Push Pop işlemleri</p>
-              </div>
-            </div>
-          </div>
+          <table class="table table-resposive" id="table">
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Proje Adı</th>
+                <th>Yaptığı Tarihi</th>
+                <th>Açıklama</th>
+                <th>link</th>
+              </tr>
+            </thead>
+          <tbody></tbody>
+        </table>
+        </div>
+      </div>
         </div>
         </div>
       </li>
@@ -320,46 +266,71 @@
             </div>
           </form>
         </div>
-        <div class="container PersonalInfo" style="padding: 0; margin: 0">
+        <div class="container personelInfo" style="padding: 0; margin: 0">
           <ul>
             <p>
               <span class="glyphicon glyphicon-user"></span>
-              <label> Name:</label><br />
-              Amr Walidi
+              <label> Name:</label>
+             <div>Amr Walidi</div> 
             </p>
           </ul>
           <ul>
             <p>
               <span class="glyphicon glyphicon-envelope"></span>
-              <label> E-posta:</label><br />
-              amr.nawaf128@gmail.com
+              <label> E-posta:</label>
+              <div>amr.nawaf128@gmail.com</div>
+              
             </p>
           </ul>
           <ul>
             <p>
               <span class="glyphicon glyphicon-phone"></span>
-              <label> Tel no:</label><br />
-              +905369922950
+              <label> Tel no:</label>
+             <div>+905369922950</div> 
             </p>
           </ul>
           <ul>
             <p>
               <span class="glyphicon glyphicon-map-marker"></span
-              ><label> Adres:</label><br />
-              Cirikpınar, Özel Ensar Vakfı Malatya YüksekÖğrenim <br />
-              Erkek Öğrenci Yurdu, Altunkaynak.
+              ><label> Adres:</label>
+               <div>Cirikpınar, Özel Ensar Vakfı Malatya YüksekÖğrenim <br />
+                    Erkek Öğrenci Yurdu, Altunkaynak.
+                  </div>   
             </p>
           </ul>
         </div>
       </li>
       <li>
-        <iframe
-          width="100%"
-          height="90px"
-          src="footer.html"
-          scrolling="no"
-          frameborder="0"
-        ></iframe>
+        <ul class="footer">
+          <li>
+            <a
+              href="https://www.facebook.com/amr.walidi/"
+              target="_blank"
+              class="fa fa-facebook"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/AmrNawaf1"
+              target="_blank"
+              class="fa fa-twitter"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/amr.nw_02/"
+              target="_blank"
+              class="fa fa-instagram"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://web.whatsapp.com/"
+              target="_blank"
+              class="fa fa-whatsapp"
+            ></a>
+          </li>
+        </ul>
       </li>
     </ul>
   </body>

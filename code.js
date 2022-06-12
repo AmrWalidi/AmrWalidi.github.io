@@ -9,8 +9,11 @@
         setTimeout(typeWriter, speed);
     }
   }
-  
 
+
+  function massage() {
+    window.alert("masaj başarlı gönderdi!");
+  }
  
  
  
