@@ -1,5 +1,5 @@
 .Hakkımda{
-    background-color: rgba(245, 245, 245, 0.79) ;
+    background-color: rgba(245, 245, 245, 0.4) ;
     border-color: rgb(250, 137, 45);
   }
   
@@ -16,6 +16,16 @@
     text-decoration-color: rgba(246, 136, 18, 0.822);
   }
 
+  .Hakkımda h2{
+    text-align: center;
+    padding-top: 2vw;
+    font-size: 3vw;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
+    color: rgb(26, 26, 26);
+    text-shadow: 3px 5px rgb(186, 186, 186);
+   
+  }
   
   .Hakkımda img {
     margin-top: 90px;

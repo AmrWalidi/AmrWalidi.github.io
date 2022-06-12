@@ -1,4 +1,4 @@
-<html lang="tr">
+<html id="html" lang="tr">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile Page</title>
@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="hakkimda.css" />
     <link rel="stylesheet" href="proje.css" />
     <link rel="stylesheet" href="iletisim.css" />
-    <script src="code.js"></script>
+    
     <link rel="stylesheet" href="footer.css">
     <link
       rel="stylesheet"
@@ -19,8 +19,23 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://html2canvas.hertzen.com/dist/html2canvas.js"
+    ></script>
+    <script src="code.js"></script>
+    <script src="pdf.js"></script>
     <script>
-        
+      
+
   $(document).ready(function() {
     // Activate Carousel
     $("#myCarousel").carousel({ interval: 7000 });
@@ -44,7 +59,7 @@
             <td>${value.trh}</td>
             <td>${value.ack}</td>
             <td>
-            <a href=${value.link} target="_top"><button style="background-color:rgb(250, 137, 45); color:black; border: white" >Bas</button></a>
+            <a href=${value.link} target="_top"><button style="background-color:rgb(250, 137, 45); color:rgb(43, 42, 42); border-radius:4px; border: white" >Bas</button></a>
           </td>
           </tr>
             `
@@ -89,7 +104,7 @@
                 </div>
       
                 <div class="item active">
-                  <video autoplay="autoplay" muted>
+                  <video autoplay="autoplay" loop muted>
                     <source
                     class="merhaba"
                       width="400px"
@@ -208,31 +223,59 @@
                 <th></th>
               </tr>
             </tbody>
-        
           </table>
+          <h2> Becerilerim</h2>
+          <label >C</label>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+              <span>90%</span>
+            </div>
+          </div>
+          <label >HTML</label>
+          <div class="progress">
+            <div class="progress-bar  progress-bar-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+              <span>80%</span>
+            </div>
+          </div>
+          <label >CSS</label>
+          <div class="progress">
+            <div class="progress-bar  progress-bar-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+              <span>90%</span>
+            </div>
+          </div>
+          <label >Javascript</label>
+          <div class="progress">
+            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+              <span>70%</span>
+            </div>
+          </div>
         </div>
       </li>
       <li id="projeler">
         <div class="proje">
           <p>Projeler</p>
-        <div class="container">
-          <table class="table table-resposive" id="table">
-            <thead>
-              <tr>
-                <th>No</th>
-                <th>Proje Adı</th>
-                <th>Yaptığı Tarihi</th>
-                <th>Açıklama</th>
-                <th>link</th>
-              </tr>
-            </thead>
-          <tbody></tbody>
-        </table>
-        </div>
+           <div class="container">
+            <table class="table table-resposive" id="table">
+              <thead>
+                 <tr>
+                   <th>No</th>
+                   <th>Proje Adı</th>
+                   <th>Yaptığı Tarihi</th>
+                   <th>Açıklama</th>
+                   <th>link</th>
+                 </tr>
+              </thead>
+              <tbody></tbody>
+             </table>
+        <ul>
+          <li>
+            <label >Proje tablosunu yazdırmak için butonu bas</label>
+            <button class="btn" onclick="genPDF()">Bas</button>
+          </li>
+        </ul>
       </div>
-        </div>
-        </div>
-      </li>
+    </div>
+  </li>
       <li id="iletişim" height="1000px">
         <div class="contact">
           <span>İletişim</span><br /><br />
@@ -245,7 +288,7 @@
             </div>
             <div class="row">
               <div class="col-75">
-                <input type="text" placeholder="No." />
+                <input type="text" placeholder="Telefon No." />
               </div>
             </div>
             <div class="row">
