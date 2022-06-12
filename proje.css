@@ -12,9 +12,14 @@
     text-decoration-color: rgba(246, 136, 18, 0.822);
   }
   
+  .proje table  tr th{
+    font-size: 1.2vw;
+
+  } 
+
   .proje table tr td{
       color: black;
-      font-size: 1.3vw;
+      font-size: 1.1vw;
   }
 
   .proje table{
