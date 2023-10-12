@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('./Components/Home/Home.css');
+@import url('./Components/About/About.css');
+@import url('./Components/Projects/Projects.css');
+@import url('./Components/Contact/Contact.css');
+
+html {
+    scroll-behavior: smooth;
+}
+
+#root{
+    position: relative;
+}
+
+body {
+    background-color: #F1FAEE;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    top: 200px;
+    left: 10px;
+    gap: 16px;
+    z-index: 1;
+}
+
+nav a {
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+nav a:hover {
+    cursor: pointer;
+}
+
+nav a:hover .icon-container {
+    background-color: #FF0707;
+    justify-content: space-around;
+    width: 10vw;
+}
+
+.menu-icon {
+    color: black;
+    font-size: 1.8vw;
+}
+
+nav a:hover .menu-icon {
+    color: #F1FAEE;
+}
+
+.icon-container p {
+    display: none;
+    color: #F1FAEE;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+nav a:hover p {
+    display: block;
+}
+
+.active-menu:hover .icon-container {
+    width: 3.3vw;
+}
+
+.active-menu .icon-container {
+    background-color: #FF0707;
+}
+
+.active-menu .menu-icon {
+    color: #F1FAEE;
+}
+
+.header{
+    position: relative;
+    margin-bottom: 6.5vw;
+}
+
+.background-text{
+    display: flex;
+    justify-content: center;
+    font-size: 7.8vw;
+    font-weight:900;
+    text-transform: uppercase;
+    color: rgb(167, 167, 167,0.15);
+    text-shadow: 6px 6px 6px rgb(167, 167, 167,0.15);
+}
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    margin: 0;
+    font-size: 3.12vw;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #141414;
+    text-shadow: 1px 1px 1px #141414;
+}
+
+.title::after{
+    content: "";
+    width: 6.51vw;
+    height: 0.2vw;
+    background-color: #FF0707;
+}
+
+footer{
+    padding: 1.3vw 0;
+}
+
+footer p{
+    margin: 0;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width:900px) {
+    nav {
+        top: 30px;
+        left: 20px;
+    }
+
+    nav .icon-container {
+        background-color: #D8D3D3;
+        justify-content: space-around;
+        width: 19vw;
+    }
+
+    nav a:active .icon-container {
+        background-color: #FF0707;
+    }
+
+    .menu-icon {
+        font-size: 3.5vw;
+    }
+
+    nav a:active .menu-icon {
+        color: white;
+    }
+
+    .icon-container p {
+        display: block;
+        color: black;
+        font-size: 2.3vw;
+    }
+
+    nav a:active p {
+        color: white;
+    }
+
+    .active-menu:hover .icon-container {
+        width: 7vw;
+        height: 7vw;
+    }
+
+    .active-menu .icon-container {
+        background-color: #FF0707;
+        width: 7vw;
+        height: 7vw;
+    }
+
+    .header{
+        margin-bottom: 11.11vw;
+    }
+    
+    .background-text{
+        font-size: 10.66vw;
+        text-shadow: 5px 5px 5px rgb(167, 167, 167,0.15);
+    }
+    
+    .title{
+        font-size: 4.44vw;
+    }
+    
+    .title::after{
+        width: 7.77vw;
+    }
+
+    footer{
+        padding: 2.22vw 0;
+    }
+    
+}
+
+@media screen and (max-width:450px) {
+    nav .icon-container {
+        width: 22vw;
+        justify-content: space-evenly;
+    }
+
+    .menu-icon {
+        font-size: 5vw;
+        margin-left: 5px;
+    }
+
+    .icon-container p {
+        font-size: 2.3vw;
+        font-weight: 600;
+    }
+
+    .active-menu:hover .icon-container {
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .active-menu .icon-container {
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .active-menu .menu-icon {
+        margin-left: 0;
+    }
+
+    .header{
+        margin-bottom: 15vw;
+    }
+
+
+    .background-text{
+        font-size: 12.8vw;
+        text-shadow: 1px 1px 1px rgb(167, 167, 167,0.15);
+    }
+    
+    .title{
+        font-size: 5vw;
+        text-shadow: 1px 1px 1px #141414;
+    }
+    
+    .title::after{
+        width: 14vw;
+        height: 0.4vw;
+    }
+
+    footer{
+        padding: 4.44vw 0;
+    }
+}
