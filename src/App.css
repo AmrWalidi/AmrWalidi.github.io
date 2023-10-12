@@ -49,12 +49,12 @@ nav a:hover .icon-container {
 }
 
 nav a:hover .menu-icon {
-    color: #F1FAEE;
+    color: #f9f9f9;
 }
 
 .icon-container p {
     display: none;
-    color: #F1FAEE;
+    color: #f9f9f9;
     font-size: 16px;
     text-transform: uppercase;
 }
@@ -72,7 +72,7 @@ nav a:hover p {
 }
 
 .active-menu .menu-icon {
-    color: #F1FAEE;
+    color: #f9f9f9;
 }
 
 .header{
