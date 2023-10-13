@@ -5,7 +5,11 @@ function StatisticList() {
   return (
     <div className="stat-group">
       {Stats.map((stat) => (
-        <Statistic key={stat.context} statsNum={stat.statsNum} context={stat.context} />
+        <Statistic
+          key={stat.context}
+          statsNum={stat.statsNum}
+          context={stat.context}
+        />
       ))}
     </div>
   );

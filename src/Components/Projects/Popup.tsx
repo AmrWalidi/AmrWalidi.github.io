@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { componentProp } from "./ProjectCard";
 
-function Popup({ setState, pro} : componentProp) {
+function Popup({ setState, pro }: componentProp) {
   useEffect(() => {
     const pop = document.getElementById(pro.title);
     if (pop != null) {

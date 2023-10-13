@@ -7,7 +7,11 @@ function SkillList() {
       <h2 className="section-title">Skills</h2>
       <div className="skill-group">
         {skills.map((skill) => (
-          <SkillProgressBars key={skill.name} percent={skill.percentage} skill={skill.name} />
+          <SkillProgressBars
+            key={skill.name}
+            percent={skill.percentage}
+            skill={skill.name}
+          />
         ))}
       </div>
     </div>
