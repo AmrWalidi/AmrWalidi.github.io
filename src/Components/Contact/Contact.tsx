@@ -5,7 +5,8 @@ import Form from "./Form";
 function Contact() {
   return (
     <div id="contact">
-      <Header title="GET IN TOUCH" backgroundText="CONTACT" />
+      <div className="divider"></div>
+      <Header title="contact" />
       <div className="contact-section-content">
         <SideInfoList />
         <Form />

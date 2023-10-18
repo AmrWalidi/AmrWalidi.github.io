@@ -3,7 +3,6 @@ import { skills } from "../../Data";
 function SkillList() {
   return (
     <div className="skills-section">
-      <div className="divider"></div>
       <h2 className="section-title">Skills</h2>
       <div className="skill-group">
         {skills.map((skill) => (

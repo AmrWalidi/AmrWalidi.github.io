@@ -1,12 +1,10 @@
-interface headerProp {
-  backgroundText: string;
-  title: string;
+interface compProps {
+  title : string
 }
 
-function Header({ backgroundText, title }: headerProp) {
+function Header({title}: compProps) {
   return (
     <div className="header">
-      <div className="background-text">{backgroundText}</div>
       <h3 className="title">{title}</h3>
     </div>
   );

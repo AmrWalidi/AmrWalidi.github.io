@@ -1,55 +1,21 @@
 .slider {
-    background-image: linear-gradient(45deg, rgb(150, 16, 15, 0.96) 20%, #6E1012 80%);
-    padding: 6.51vw;
-    overflow-x: hidden;
+    margin-bottom: 3vw;
 }
 
 .project-list {
     display: flex;
-    gap: 3.26vw;
-    transition: transform 0.3s;
-}
-
-.slider-indicator {
-    display: flex;
-    gap: 0.33vw;
-    width: 100%;
-    justify-content: center;
-    margin-top: 3.26vw;
-}
-
-.dot {
-    width: 0.65vw;
-    height: 0.65vw;
-    border-radius: 50%;
-    border: 1px solid #D9D9D9;
-    background-color: transparent;
-    cursor: pointer;
-    transition: width 0.2s, backgroundColor;
-}
-
-.dot-active {
-    width: 1.63vw;
-    border-radius: 0.39vw;
-    background-color: #D9D9D9;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 37.1vw;
-    border-radius: 1.3vw;
-    background-color: #f9f9f9;
-    padding: 0 0.98vw;
+    flex-wrap: wrap;
+    gap: 1.3vw 1.3vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 63.15vw;
 }
 
 .image {
-    width: 34.51vw;
-    height: 19.07vw;
-    border-radius: 0.78vw;
-    margin-top: 1.3vw;
-    border: 1px solid black;
+    width: 30.9vw;
+    height: 22.13vw;
+    cursor: pointer;
 }
 
 .card-context {
@@ -57,38 +23,6 @@
     align-items: center;
     gap: 13.02vw;
     padding: 0.33vw;
-}
-
-.card p {
-    font-weight: 600;
-    text-transform: capitalize;
-    margin: 0;
-}
-
-.project-type {
-    font-size: 1.56vw;
-}
-
-.side-text {
-    font-size: 1.17vw;
-    color: #636363;
-}
-
-.openedLink-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 3.26vw;
-    height: 3.26vw;
-    border-radius: 50%;
-    background-color: #FF3636;
-    border: 1px solid black;
-    cursor: pointer;
-}
-
-.openedLink-container .icon {
-    color: #f9f9f9;
-    font-size: 1.63vw;
 }
 
 .popup-card {
@@ -149,61 +83,17 @@
 
 @media screen and (max-width: 900px) {
     .slider {
-        padding: 11.11vw 5.55vw 5.55vw;
+        margin-bottom: 6vw;
     }
 
     .project-list {
-        gap: 3.77vw;
-    }
-
-    .slider-indicator {
-        gap: 1.56vw;
-        margin-top: 8.22vw;
-    }
-
-    .dot {
-        width: 1.67vw;
-        height: 1.67vw;
-    }
-
-    .dot-active {
-        width: 3.33vw;
-        border-radius: 2.22vw;
-    }
-
-    .card {
-        width: 37.1vw;
-        border-radius: 1.11vw;
-        padding: 0 2.11vw;
+        gap: 1.3vw 1.3vw;
+        width: 66vw;
     }
 
     .image {
-        width: 35.56vw;
-        height: 31.11vw;
-        border-radius: 0.56vw;
-        margin-top: 2.22vw;
-    }
-
-    .card-context {
-        gap: 10.56vw;
-        padding: 2.11vw 0;
-    }
-
-    .project-type {
-        font-size: 2.22vw;
-    }
-
-    .side-text {
-        font-size: 2vw;
-    }
-
-    .openedLink-container {
-        width: 6.11vw;
-        height: 6.11vw;
-    }
-
-    .openedLink-container .icon {
-        font-size: 2.77vw;
+        width: 32vw;
+        height: 27vw;
     }
 
     .popup-card {
@@ -244,62 +134,14 @@
 }
 
 @media screen and (max-width: 450px) {
-    .slider {
-        padding: 5.55vw;
-    }
 
     .project-list {
-        gap: 7.33vw;
-    }
-
-    .slider-indicator {
-        gap: 2.22vw;
-        margin-top: 6vw;
-    }
-
-    .dot {
-        width: 2.22vw;
-        height: 2.22vw;
-    }
-
-    .dot-active {
-        width: 4.44vw;
-        border-radius: 4.44vw;
-    }
-
-    .card {
-        width: 50vw;
-        border-radius: 2.22vw;
-        padding: 0 2.78vw;
+        width: 70vw;
     }
 
     .image {
-        width: 44.44vw;
-        height: 48.8vw;
-        border-radius: 1.11vw;
-        margin-top: 2.88vw;
-    }
-
-    .card-context {
-        gap: 6.67vw;
-        padding: 6vw 0;
-    }
-
-    .project-type {
-        font-size: 3.33vw;
-    }
-
-    .side-text {
-        font-size: 2.67vw;
-    }
-
-    .openedLink-container {
-        width: 7.78vw;
-        height: 7.78vw;
-    }
-
-    .openedLink-container .icon {
-        font-size: 3.5vw;
+        width: 34vw;
+        height: 27vw;
     }
 
     .popup-card {

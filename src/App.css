@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 @import url('./Components/Home/Home.css');
 @import url('./Components/About/About.css');
 @import url('./Components/Projects/Projects.css');
@@ -8,12 +8,12 @@ html {
     scroll-behavior: smooth;
 }
 
-#root{
+#root {
     position: relative;
 }
 
 body {
-    background-color: #f9f9f9;
+    background-color: #0F0F0F;
     font-family: 'Poppins', sans-serif;
     margin: 0;
 }
@@ -38,7 +38,7 @@ nav a:hover {
 }
 
 nav a:hover .icon-container {
-    background-color: #FF0707;
+    background-color: #FF3636;
     justify-content: space-around;
     width: 10vw;
 }
@@ -57,6 +57,7 @@ nav a:hover .menu-icon {
     color: #f9f9f9;
     font-size: 16px;
     text-transform: uppercase;
+    font-weight: 400;
 }
 
 nav a:hover p {
@@ -68,59 +69,46 @@ nav a:hover p {
 }
 
 .active-menu .icon-container {
-    background-color: #FF0707;
+    background-color: #FF3636;
 }
 
 .active-menu .menu-icon {
     color: #f9f9f9;
 }
 
-.header{
+.header {
     position: relative;
-    margin-bottom: 6.5vw;
+    margin:  10vw 0vw 3vw;
 }
 
-.background-text{
-    display: flex;
-    justify-content: center;
-    font-size: 7.8vw;
-    font-weight:900;
-    text-transform: uppercase;
-    color: rgb(167, 167, 167,0.15);
-    text-shadow: 6px 6px 6px rgb(167, 167, 167,0.15);
-}
-
-.title{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    display: flex;
-    flex-direction: column;
-    align-items:  center;
+.title {
+    text-align: center;
     margin: 0;
     font-size: 3.12vw;
-    font-weight: 900;
     text-transform: uppercase;
-    color: #141414;
-    text-shadow: 1px 1px 1px #141414;
+    color: #F8F7F7;
+    font-weight: 300;
 }
 
-.title::after{
-    content: "";
-    width: 6.51vw;
-    height: 0.2vw;
-    background-color: #FF0707;
+.divider {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50vw;
+    height: 0.13vw;
+    background-color: #6A6A6A;
+    margin-bottom: 3.9vw;
 }
 
-footer{
+footer {
     padding: 1.3vw 0;
 }
 
-footer p{
+footer p {
     margin: 0;
     text-align: center;
     font-size: 0.8rem;
+    color: #F8F7F7;
 }
 
 @media screen and (max-width:900px) {
@@ -136,7 +124,7 @@ footer p{
     }
 
     nav a:active .icon-container {
-        background-color: #FF0707;
+        background-color: #FF3636;
     }
 
     .menu-icon {
@@ -163,32 +151,26 @@ footer p{
     }
 
     .active-menu .icon-container {
-        background-color: #FF0707;
         width: 7vw;
         height: 7vw;
     }
 
-    .header{
-        margin-bottom: 11.11vw;
-    }
-    
-    .background-text{
-        font-size: 10.66vw;
-        text-shadow: 5px 5px 5px rgb(167, 167, 167,0.15);
-    }
-    
-    .title{
-        font-size: 4.44vw;
-    }
-    
-    .title::after{
-        width: 7.77vw;
+    .header {
+        margin: 20vw 0vw 5vw;
     }
 
-    footer{
+    .title {
+        font-size: 4.44vw;
+    }
+
+    .divider {
+        width: 40vw;
+    }
+
+    footer {
         padding: 2.22vw 0;
     }
-    
+
 }
 
 @media screen and (max-width:450px) {
@@ -221,27 +203,27 @@ footer p{
         margin-left: 0;
     }
 
-    .header{
-        margin-bottom: 15vw;
-    }
-
-
-    .background-text{
+    .background-text {
         font-size: 12.8vw;
-        text-shadow: 1px 1px 1px rgb(167, 167, 167,0.15);
+        text-shadow: 1px 1px 1px rgb(167, 167, 167, 0.15);
     }
-    
-    .title{
+
+    .title {
         font-size: 5vw;
         text-shadow: 1px 1px 1px #141414;
     }
-    
-    .title::after{
+
+    .title::after {
         width: 14vw;
         height: 0.4vw;
     }
 
-    footer{
+    .divider {
+        width: 45vw;
+        margin-bottom: 6.22vw;
+    }
+
+    footer {
         padding: 4.44vw 0;
     }
 }

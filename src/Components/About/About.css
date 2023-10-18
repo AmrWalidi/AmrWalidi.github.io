@@ -1,5 +1,5 @@
 #about {
-    margin: 3.64vw 7.23vw 10vw;
+    margin: 18.23vw 7.23vw 5.85vw;
 }
 
 .infos-stats {
@@ -15,8 +15,8 @@
 
 .section-title {
     font-size: 2.34vw;
-    font-weight: 900;
-    color: #141414;
+    font-weight: 100;
+    color: #F8F7F7;
     text-shadow: 1px 1px 1px #141414;
     text-transform: uppercase;
     margin-top: 0;
@@ -35,7 +35,7 @@
 }
 
 .info label {
-    color: #6A6A6A;
+    color: #F8F7F7;
     font-size: 1.43vw;
     font-weight: 600;
 }
@@ -51,7 +51,7 @@
 .stat-group {
     display: flex;
     gap: 1.95vw 1.3vw;
-    width: 33.2vw;
+    width: 33.7vw;
     flex-wrap: wrap;
 }
 
@@ -61,41 +61,36 @@
     justify-content: center;
     width: 15.62vw;
     height: 10.74vw;
-    background-color: rgb(222, 222, 222, 0.27);
+    border: 2px solid #979797
 }
 
 .stat-number {
     font-size: 3.12vw;
-    color: #FF3636;
-    font-weight: 900;
-    text-shadow: 1px 1px 1px #FF3636;
+    color: #D74242;
+    font-weight: 700;
     margin-left: 1.63vw;
 }
 
-.stat-number span{
+.stat-number span {
     font-size: 2.6vw;
     font-weight: initial;
-    text-shadow:none;
+    text-shadow: none;
 }
 
 .stat-content {
     font-size: 1.56vw;
     margin-left: 5.86vw;
+    color: #F8F7F7;
 }
 
 .skills-section {
-    margin-top: 4.88vw;
+    margin-top: 8.8vw;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.divider {
-    width: 42.32vw;
-    height: 0.13vw;
-    background-color: #6A6A6A;
-    margin-bottom: 3.9vw;
-}
+
 
 .skill-group {
     display: flex;
@@ -110,7 +105,8 @@
     display: flex;
     justify-content: space-between;
     font-size: 1.69vw;
-    color: #141414;
+    font-weight: 500;
+    color: #F8F7F7;
 }
 
 .progress-bar {
@@ -131,7 +127,7 @@
 
 @media screen and (max-width:900px) {
     #about {
-        margin: 1.11vw 9.44vw;
+        margin: 22.2vw 9.44vw 10vw;
     }
 
     .infos-stats {
@@ -168,7 +164,7 @@
 
     .stat-group {
         gap: 2.22vw 5.55vw;
-        width: 61.44vw;
+        width: 63vw;
     }
 
     .stat-container {
@@ -180,7 +176,7 @@
         font-size: 5.55vw;
     }
 
-    .stat-number span{
+    .stat-number span {
         font-size: 5.55vw;
     }
 
@@ -188,9 +184,7 @@
         font-size: 2.66vw;
     }
 
-    .divider {
-        width: 37.22vw;
-    }
+
 
     .skill-group {
         gap: 6vw 6.33vw;
@@ -213,7 +207,7 @@
 
 @media screen and (max-width:450px) {
     #about {
-        margin: 8vw 6.67vw;
+        margin: 9vw 6.67vw;
     }
 
     .infos-stats {
@@ -251,7 +245,7 @@
 
     .stat-group {
         gap: 3.56vw 4.67vw;
-        width: 69.11vw;
+        width: 71.5vw;
         margin: 0;
     }
 
@@ -264,7 +258,7 @@
         font-size: 7.11vw;
     }
 
-    .stat-number span{
+    .stat-number span {
         font-size: 6.22vw;
     }
 
@@ -277,10 +271,7 @@
         margin-top: 13.33vw;
     }
 
-    .divider {
-        width: 48.44vw;
-        margin-bottom: 6.22vw;
-    }
+
 
     .skill-group {
         flex-direction: column;

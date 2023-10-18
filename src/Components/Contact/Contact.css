@@ -6,6 +6,7 @@
     display: flex;
     gap: 3.9vw;
     align-items: center;
+    margin-top: 5vw;
 }
 
 .side-info-list {
@@ -38,6 +39,7 @@
 
 .info-title {
     font-size: 1.82vw;
+    color: #F8F7F7;
 }
 
 .info-answer {
@@ -107,7 +109,6 @@ input[name="message"]::placeholder {
     border: 1px solid #FF3636;
     border-radius: 2.28vw;
     overflow: hidden;
-    box-shadow: 1px 1px 5px rgb(125, 125, 125);
     cursor: pointer;
 }
 
@@ -172,6 +173,7 @@ input[name="message"]::placeholder {
         flex-direction: column;
         gap: 10.33vw;
         align-items: start;
+        margin-top: 10vw;
     }
 
     .side-info-list {
@@ -273,6 +275,7 @@ input[name="message"]::placeholder {
     .contact-section-content {
         gap: 13.3vw;
         align-items: center;
+        margin-top: 15vw;
     }
 
     .side-info-list {
